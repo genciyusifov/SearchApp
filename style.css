@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg") center/cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    min-height: 800px;  
+    /* Daim scrol olsun deye height verilib bodye */
+}
+
+#searchDiv {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.pictureDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 1300px;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.pictureDiv div {
+    padding: 10px;
+
+}
+
+.pictureDiv img {
+    width: 400px;
+    height: 360px;
+    box-shadow: 0 0 8px #ffffff;
+    transition: .5s;
+}
+img:hover{
+    scale: 0.9;
+}
+#inputS {
+    width: 400px;
+    padding: 12px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid salmon;
+}
+
+#inputS::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: salmon;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f6f;
+}
+
+
+h1 {
+    background: #34333367;
+    color: aliceblue;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid salmon;
+    box-shadow: 0 0 3px #666;
+}
+
+.okey {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
