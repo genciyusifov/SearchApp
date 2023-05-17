@@ -17,6 +17,13 @@ body {
     margin: auto;
     display: block;
 }
+.bttns{
+    padding: 10px 0 0 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
 
 .pictureDiv {
     position: relative;
@@ -24,9 +31,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    width: 1300px;
+    width: 80%;
     margin: auto;
     overflow-y: auto;
+    justify-content: space-evenly
 }
 
 .pictureDiv div {
@@ -35,8 +43,8 @@ body {
 }
 
 .pictureDiv img {
-    width: 400px;
-    height: 360px;
+    width: 350px;
+    height: 350px;
     box-shadow: 0 0 8px #ffffff;
     transition: .5s;
 }
@@ -44,7 +52,7 @@ img:hover{
     scale: 0.9;
 }
 #inputS {
-    width: 400px;
+    width: 50%;
     padding: 12px;
     outline: none;
     border-radius: 20px;
@@ -60,7 +68,7 @@ img:hover{
     color: #999;
 }
 
-button {
+button{
     padding: 12px 24px;
     background-color: salmon;
     color: #fff;
@@ -69,6 +77,10 @@ button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.bttns button {
+    width: 40%;
 }
 
 button:hover {
@@ -97,3 +109,22 @@ h1 {
     top: 20px;
     right: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+    .pictureDiv {
+        flex-direction: column; 
+        width: 100%;
+    }
+    #searchDiv{
+        display: block;
+    }
+    #inputS{
+        margin-bottom: 15px;
+    }
+    .bttns{
+        padding: 0;
+    }
+    .okey {
+        right: 36%;
+    }
+  }
