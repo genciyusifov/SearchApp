@@ -110,6 +110,28 @@ h1 {
     right: 150px;
 }
 
+.loading-spinner {
+    margin-top: 150px;
+    top: 50%;
+    top: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #333;
+    box-shadow: 0 0 3px #ff6f6f;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 @media only screen and (max-width: 600px) {
     .pictureDiv {
         flex-direction: column; 
