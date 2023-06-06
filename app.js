@@ -38,7 +38,7 @@ function fetchImages() {
       } else {
         picture.innerHTML = data.results.reduce(
           (kod, item) =>
-            (kod += `<div class="imgDiv"><img src="${item.urls.small}"/></div>`),
+            (kod += `<div  class="imgDiv"><img  src="${item.urls.small}"/></div>`),
           ""
         );
       }

@@ -46,12 +46,14 @@ body {
 }
 
 .pictureDiv img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
   box-shadow: 0 0 5px #ffffff;
   transition: 0.5s;
 }
+
 
 img:hover {
   transform: scale(0.9);
